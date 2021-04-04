@@ -14,7 +14,7 @@ In the BERT approach, a pre-trained BERT model called [BERTimbau](https://github
 | :-------------------: | :----------: | :---------------------: |
 | BoW + MLP             |    88.65%    |         1.61%           |
 | GloVe 100D + BiLSTM   |    93.56%    |         0.85%           |
-| BERTimbau fined-tuned |  **98.44%**  |           -             |
+| BERTimbau fine-tuned  |  **98.44%**  |           -             |
 
 ### References:
 
