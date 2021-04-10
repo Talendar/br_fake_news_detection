@@ -6,7 +6,7 @@ In the bag-of-words approach, each text was represented by a vector containing t
 
 In the word embeddings approach, each text was represented by a sequence of 100-dimensional GloVe word vectors. The maximum number of tokens allowed in each text was set to 200 - larger texts were truncated. The learning algorithm used was a deep BiLSTM neural network and the average accuracy of the models in the 10-fold cross-validation was 93,56%.
 
-In the BERT approach, a pre-trained BERT model called [BERTimbau](https://github.com/neuralmind-ai/portuguese-bert) (trained on the Portuguese language) was fine-tuned. The BERT model was responsible for encoding each text in a 768-dimensional vector, while a fully-connected layer with linear activation was responsible for predicting (generating the *logits*) the text's class based on the text's encoding. To train the model (BERT + classifier), 75% of the data (5400 texts) was used. The validation and testing of the model were performed on, respectively, 12.5% (900 texts) and 12.5% (900 texts) of the data. The model was able to achieve an accuracy of 98.44% on the test dataset.
+In the BERT approach, a pre-trained BERT model called [BERTimbau](https://github.com/neuralmind-ai/portuguese-bert) (trained on the Portuguese language) was fine-tuned. The BERT model was responsible for encoding each text in a 768-dimensional vector, while a fully-connected layer with linear activation was responsible for predicting (generating the *logits*) the text's class based on the text's encoding. To train the model (BERT + classifier), 75% of the data (5400 texts) was used. The validation and testing of the model were performed on, respectively, 12.5% (900 texts) and 12.5% (900 texts) of the data. The model was able to achieve an accuracy of 99.22% on the test dataset.
 
 ### Results
 
@@ -14,7 +14,7 @@ In the BERT approach, a pre-trained BERT model called [BERTimbau](https://github
 | :-------------------: | :----------: | :---------------------: |
 | BoW + MLP             |    88.65%    |         1.61%           |
 | GloVe 100D + BiLSTM   |    93.56%    |         0.85%           |
-| BERTimbau fine-tuned  |  **98.44%**  |           -             |
+| BERTimbau fine-tuned  |  **99.22%**  |           -             |
 
 ### References:
 
